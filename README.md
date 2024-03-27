@@ -25,6 +25,6 @@ Inclusive temos dois parâmetros que podem ser passados:
 Como exemplo ficaria:
 
 ```
-./ fedorante.sh --xppen --reboot
+./fedorante.sh --xppen --reboot
 ```
 
