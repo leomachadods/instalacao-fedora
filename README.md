@@ -51,3 +51,15 @@ watch -n 1 'ps -A | grep akmod'
 ```
 `OBS: Caso você não estiver vendo nenhum processo rodando como na print abaixo, quer dizer que pode-se reiniciar com sucesso`
 ![print](https://testamento.s3.sa-east-1.amazonaws.com/Screenshot+from+2024-03-27+23-54-16.png)
+
+# Correção de bugs
+
+Um bug que já me ocorreu no fedora, foi acontecer glitches no meu google chrome devido
+Ao comportamento do wayland com os drivers nvidia, mas a correção é simples
+
+* Abra o seu navegador
+* Digite `chrome://flags/`
+* Pesquise `Preferred Ozone platform`
+* Mude de `Default` para `Auto`
+
+Pronto agora está resolvido :D
