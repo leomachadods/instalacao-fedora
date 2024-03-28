@@ -13,7 +13,8 @@ Esse script foi criado para automatizar a instalação e atualização do fedora
 	* `Discord`
 	* `Krita`
 	* `Prism launcher (Minecraft)`
-	* `Xp pen (Opicional)`
+	* `Xp pen (Opcional)`
+	* `Open tablet driver (Opcional)`
 
 ### Instruções de uso
 
@@ -26,6 +27,7 @@ Caso queira instalar apps adicionais, existem os seguintes parâmetros:
 
 * Lista de parâmetros   
 	* `--xppen`
+	* `--opentablet`
 	
 Como exemplo ficaria:
 
@@ -49,5 +51,3 @@ watch -n 1 'ps -A | grep akmod'
 ```
 `OBS: Caso você não estiver vendo nenhum processo rodando como na print abaixo, quer dizer que pode-se reiniciar com sucesso`
 ![print](https://testamento.s3.sa-east-1.amazonaws.com/Screenshot+from+2024-03-27+23-54-16.png)
-
-# script-fedora

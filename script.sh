@@ -28,7 +28,7 @@ for arg in "$@"
 do
 	#Tablet driver xp pen
 	if [ $arg == "--xppen" ]; then
-		echo "Downloading xp pen drivers..."
+		echo "Downloading xp pen driver..."
 		wget -P ~/Documents/ https://www.xp-pen.com/la-pt/download/file.html?id=2106&pid=718&ext=gz
 		wait
 		cd ~/Documents
@@ -39,4 +39,15 @@ do
 		sudo ./install.sh
 		cd ..
 		rm file.tar.gz
+		echo "Installation Finished!"
+	elif [ $arg == "--opentablet" ]; then
+		echo "Downloading open tablet driver..."
+		wget -P ~/Documents/ https://github.com/OpenTabletDriver/OpenTabletDriver/releases/latest/download/OpenTabletDriver.rpm
+		wait
+		cd ~/Documents
+		sudo dnf install ./OpenTabletDriver.rpm
+		sudo dracut --regenerate-all --force
+		echo "Installation Finished!"
+		echo "Just type 'otd-daemon' to start the driver process"
+	fi
 done
