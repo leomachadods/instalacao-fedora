@@ -8,15 +8,15 @@ sudo dnf install -y \
   https://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
 
 #Flatpaks (Apps)
-yes | flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
-yes | flatpak install flathub org.prismlauncher.PrismLauncher
-yes | flatpak install flathub com.google.Chrome
-yes | flatpak install flathub com.discordapp.Discord  
-yes | flatpak install flathub com.valvesoftware.Steam
-yes | flatpak install flathub sh.ppy.osu
-yes | flatpak install flathub com.mattjakeman.ExtensionManager
-yes | flatpak install flathub com.github.tchx84.Flatseal
-yes | flatpak install flathub org.kde.krita
+flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
+flatpak install flathub org.prismlauncher.PrismLauncher
+flatpak install flathub com.google.Chrome
+flatpak install flathub com.discordapp.Discord  
+flatpak install flathub com.valvesoftware.Steam
+flatpak install flathub sh.ppy.osu
+flatpak install flathub com.mattjakeman.ExtensionManager
+flatpak install flathub com.github.tchx84.Flatseal
+flatpak install flathub org.kde.krita
 
 #Complementary apps
 sudo dnf install -y unzip
