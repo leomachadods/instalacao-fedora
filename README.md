@@ -5,14 +5,19 @@ Esse script foi criado para automatizar a instalação e atualização do fedora
 `OBS: Caso você não tenha experiência com linux,
  saiba que o fedora é uma distro difícil para iniciantes` 
 
+Versões testadas e suportadas: `39+`
+
 ---
 
 ### Configurações recomendadas (Opcional)
 
-Inclua esses códigos no seu arquivo
+Notei que não fazer certas configurações, deixou a velocidade do terminal muito a desejar, por isso estou incluindo a configuração abaixo, para aumentar bastante a performance
+
+A configuração terá que ser feita no seguinte arquivo
 `/etc/dnf/dnf.conf`
 
-Para deixar mais fácil digite o seguinte comando:
+Para acessar, digite o seguinte comando no terminal:
+
 ```
 sudo nano /etc/dnf/dnf.conf
 ```
@@ -24,27 +29,27 @@ max_parallel_downloads=10
 defaultyes=True
 keepcache=True
 ```
-
-Isso serve para deixar o terminal mais rápido e baixar os pacotes mais rápido também
-
 ---
 ### Apps
 
-* Lista de apps
+* Lista de apps de usuário
 	* `Osu lazer`
 	* `Steam`
-	* `Gnome-tweaks`
-	* `Extension manager`
 	* `Discord`
 	* `Visual studio code`
 	* `Krita`
 	* `Prism launcher 'minecraft'`
 	* `Xp pen (Opcional)`
 	* `Open tablet driver (Opcional)`
+>
+* Lista de apps do sistema
+	* `Extension manager`
+	* `Gnome-tweaks`
+	* `Codecs de áudio`
 
 ### Instruções de uso
 
-Primeiramente, utilize o comando para cloncar o repo:
+Primeiramente, utilize o comando para clonar o repo:
 
 ```
 git clone https://github.com/leomachadods/instalacao-fedora.git
@@ -89,8 +94,7 @@ watch -n 1 'ps -A | grep akmod'
 
 # Correção de bugs
 
-Um bug que já me ocorreu no fedora, foi acontecer glitches no meu google chrome devido
-Ao comportamento do wayland com os drivers nvidia, mas a correção é simples
+Um bug que já me ocorreu no fedora é que o google chrome estava gerando vários glitches devido ao comportamento do wayland com os drivers nvidia, mas a correção é simples
 
 * Abra o seu navegador
 * Digite `chrome://flags/`
