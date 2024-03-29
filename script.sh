@@ -17,12 +17,17 @@ flatpak install flathub sh.ppy.osu
 flatpak install flathub com.mattjakeman.ExtensionManager
 flatpak install flathub com.github.tchx84.Flatseal
 flatpak install flathub org.kde.krita
+flatpak install flathub com.mattjakeman.ExtensionManager
 
 #Complementary apps
 sudo dnf install -y unzip
 sudo dnf install -y gnome-tweaks 
 curl https://getmic.ro | bash
 sudo mv micro /usr/bin
+sudo rpm --import https://packages.microsoft.com/keys/microsoft.asc
+sudo sh -c 'echo -e "[code]\nname=Visual Studio Code\nbaseurl=https://packages.microsoft.com/yumrepos/vscode\nenabled=1\ngpgcheck=1\ngpgkey=https://packages.microsoft.com/keys/microsoft.asc" > /etc/yum.repos.d/vscode.repo'
+dnf check-update
+sudo dnf install code
 
 for arg in "$@"
 do

@@ -2,17 +2,43 @@
 
 Esse script foi criado para automatizar a instalação e atualização do fedora
 
-`OBS: Caso você não tenha experiência com linux, saiba que o fedora é uma distro difícil para iniciantes` 
+`OBS: Caso você não tenha experiência com linux,
+ saiba que o fedora é uma distro difícil para iniciantes` 
 
+---
+
+### Configurações recomendadas (Opcional)
+
+Inclua esses códigos no seu arquivo
+`/etc/dnf/dnf.conf`
+
+Para deixar mais fácil digite o seguinte comando:
+```
+sudo nano /etc/dnf/dnf.conf
+```
+
+Cole dentro do arquivo as seguintes linhas:
+```
+fastestmirror=True
+max_parallel_downloads=10
+defaultyes=True
+keepcache=True
+```
+
+Isso serve para deixar o terminal mais rápido e baixar os pacotes mais rápido também
+
+---
 ### Apps
 
 * Lista de apps
 	* `Osu lazer`
 	* `Steam`
 	* `Gnome-tweaks`
+	* `Extension manager`
 	* `Discord`
+	* `Visual studio code`
 	* `Krita`
-	* `Prism launcher (Minecraft)`
+	* `Prism launcher 'minecraft'`
 	* `Xp pen (Opcional)`
 	* `Open tablet driver (Opcional)`
 
